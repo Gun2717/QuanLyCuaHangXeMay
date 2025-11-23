@@ -1,0 +1,36 @@
+2025-11-23 22:45:34 INFO  ServerMain:11 - Starting Motorcycle Shop Server...
+2025-11-23 22:45:34 INFO  DatabaseManager:22 - Database connection established successfully
+2025-11-23 22:45:34 INFO  ServerMain:17 - Database connection successful
+2025-11-23 22:45:34 INFO  SocketServer:32 - Server started on port 9999
+2025-11-23 22:46:11 INFO  SocketServer:40 - New client connected: /127.0.0.1
+2025-11-23 22:46:14 INFO  ClientHandler:50 - Received request: LOGIN
+2025-11-23 22:46:14 INFO  UserService:34 - User logged in: admin
+2025-11-23 22:46:16 INFO  ClientHandler:50 - Received request: GET_ALL_CATEGORIES
+2025-11-23 22:46:16 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:46:19 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:46:23 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:46:29 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:46:42 INFO  ClientHandler:50 - Received request: SEARCH_PRODUCTS
+2025-11-23 22:47:04 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:47:05 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:47:17 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:48:03 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:48:13 INFO  ClientHandler:50 - Received request: SEARCH_PRODUCTS
+2025-11-23 22:48:17 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:48:43 INFO  ClientHandler:50 - Received request: GET_ALL_PRODUCTS
+2025-11-23 22:48:58 ERROR ClientHandler:57 - Client connection error
+java.io.EOFException
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:3214)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1684)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:509)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:467)
+	at iuh.fit.se.server.network.ClientHandler.run(ClientHandler.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-11-23 22:48:58 INFO  SocketServer:76 - Client removed. Total clients: 0
+2025-11-23 22:48:58 INFO  ClientHandler:156 - Client disconnected
+2025-11-23 22:49:58 INFO  ServerMain:30 - Shutting down server...
+2025-11-23 22:49:58 INFO  SocketServer:67 - Server stopped
+2025-11-23 22:49:58 INFO  DatabaseManager:56 - Database connection closed
+2025-11-23 22:49:58 INFO  ServerMain:33 - Server shut down complete
